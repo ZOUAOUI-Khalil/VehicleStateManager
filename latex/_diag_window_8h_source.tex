@@ -1,0 +1,49 @@
+\doxysection{Diag\+Window.\+h}
+\hypertarget{_diag_window_8h_source}{}\label{_diag_window_8h_source}\index{D:/Projetstage/VehicleStateManager/src/DiagWindow.h@{D:/Projetstage/VehicleStateManager/src/DiagWindow.h}}
+\mbox{\hyperlink{_diag_window_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DIAGWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DIAGWINDOW\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QMqttClient>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QStandardItemModel>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_types_and_defines_8h}{TypesAndDefines.h}}>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_diag_window}{DiagWindow}};}
+\DoxyCodeLine{00011\ \}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_diag_window}{DiagWindow}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_diag_window}{DiagWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr},\ \textcolor{keywordtype}{int}\ SerialNumber\ =0,\ QMap<long,TGURMsg>*\ CurrentData\ =\ \textcolor{keyword}{nullptr},\ QMqttClient*\ i\_PtrClient\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_diag_window_a8d0412a0cf9f481308fc6798b8c9b67c}{\string~DiagWindow}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_diag_window_ac3a0cf931bd1e0d18fc119e3400fd2f5}{Updatecurrentdata}}(\textcolor{keywordtype}{int}\ serialnumber);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ QMqttClient*\ \mbox{\hyperlink{class_diag_window_adbe58fd80b143d650d5f6e0d0c401ebc}{m\_Client}}=\textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//TGURMsg\ Msg;}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_diag_window_a29ef2e18955d4ccceda602a22aba49a4}{m\_SerialNumber}}\ =\ -\/1;}
+\DoxyCodeLine{00029\ \ \ \ \ QMap<long,TGURMsg>*\ \mbox{\hyperlink{class_diag_window_a5ebf663cc6c5f859f2d05d5c850e5c46}{m\_CurrentData}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}}\ \mbox{\hyperlink{class_diag_window_ab54d3c65212a9df58063d2a9242e0af3}{Message}};}
+\DoxyCodeLine{00031\ \ \ \ \ Ui::DiagWindow\ *\mbox{\hyperlink{class_diag_window_ad4cb750d8b70565466599b44d898fbdd}{ui}};}
+\DoxyCodeLine{00032\ \ \ \ \ QStandardItemModel\ *\ \mbox{\hyperlink{class_diag_window_a4e8bf6b0ad0b2eb403b380982d6c6f6e}{Model}}=\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{/*TGURMsg*\ Msg=nullptr;*/}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_diag_window_abd9cdbae1dc1051e74bc90a779a7db6f}{updateValues}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_diag_window_a08a8a164c569c2bf7bf3ed339c022bb2}{Enddiagclicked}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{comment}{/*public\ slots:}}
+\DoxyCodeLine{00039\ \textcolor{comment}{\ \ \ \ void\ Updatecurrentdata(int\ serialnumber);}}
+\DoxyCodeLine{00040\ \textcolor{comment}{private\ slots:}}
+\DoxyCodeLine{00041\ \textcolor{comment}{\ \ \ \ void\ Enddiagclicked();}}
+\DoxyCodeLine{00042\ \textcolor{comment}{\ \ \ \ //void\ \ SetItems\ ();*/}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DIAGWINDOW\_H}}
+
+\end{DoxyCode}

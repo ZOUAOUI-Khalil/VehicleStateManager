@@ -1,0 +1,76 @@
+\doxysection{Main\+Window.\+h}
+\hypertarget{_main_window_8h_source}{}\label{_main_window_8h_source}\index{D:/Projetstage/VehicleStateManager/src/MainWindow.h@{D:/Projetstage/VehicleStateManager/src/MainWindow.h}}
+\mbox{\hyperlink{_main_window_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MAINWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAINWINDOW\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QJsonDocument>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QJsonObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QStandardItemModel>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QMqttClient>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QHash>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_types_and_defines_8h}{TypesAndDefines.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}};\ \}}
+\DoxyCodeLine{00014\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00019\ signals:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_adb25055dcfe673607c1f9fa57fcc8e96}{currentdatachanged}}(\textcolor{keywordtype}{int}\ ser);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//TGURMsg\ Msg\ ;}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_acfc174934a27811d21ee44111a343793}{m\_WifiMode}}=\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_ae746332aacc5998210e0febcdff6ab8e}{m\_GSMMode}}=\ false\ ;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_main_window_aea85a403a5f8f15c051a9e0cdf99ced3}{m\_Row}}=0;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_main_window_adf4ae923406b516aab81d56e81bdc66c}{Selectedrow}};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//TGURMsg\ Msg;}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//QStandardItemModel\ *\ m\_Model=\ nullptr;}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a02b66f6fcc12fc3d8525f19c9e51fa3b}{OnItemSelected}}(QModelIndex\ index);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_aa9d6ac163502ea3f829f31d75b4aa0ab}{OnClientConnected}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a56d3608069035d7f8d7d5b7e449b0b1d}{OnClientDisconnected}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a6a1b35a00e90ede04370917828d286d9}{onMessageReceived}}(QMqttMessage\ msg);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_ab27297114529e4c16d6d8d7a54927a0e}{refresh}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{/*void\ saveinivalues(const\ QString\ \&path,const\ QString\ \&groupename,const\ QString\ \&Name,const\ QString\ \&Value);}}
+\DoxyCodeLine{00043\ \textcolor{comment}{\ \ \ \ QString\ readinivalues(const\ QString\ \&path,const\ QString\ \&groupename,const\ QString\ \&Name);*/}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a49500f31279c41d13bfa1659bb8737f8}{on\_Refreshbutton\_clicked}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{struct_configuration}{Configuration}}\ \mbox{\hyperlink{class_main_window_acf958d33f7178a5ad52a42dcbc47e2bf}{m\_Configuration}};}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//TGURMsg*\ Msg=nullptr;}}
+\DoxyCodeLine{00053\ \ \ \ \ QTimer*\ \mbox{\hyperlink{class_main_window_a7efd59ad07ae26f00d1da33615a46f0c}{m\_timer}}=\ \textcolor{keyword}{new}\ QTimer();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ QMap<long,TGURMsg>\ \mbox{\hyperlink{class_main_window_a8773d36f93a528c2e55a0abca16d649e}{m\_Currentdata}};}
+\DoxyCodeLine{00057\ \ \ \ \ QStandardItemModel\ *\ \mbox{\hyperlink{class_main_window_a5f0a0244d0ce1d97ed4c144601530902}{m\_Model}}=\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00058\ \ \ \ \ QMqttClient*\ \mbox{\hyperlink{class_main_window_afa6d0d703666503604a5fa0436e242e2}{m\_Client}}=\textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00059\ \ \ \ \ Ui::MainWindow\ *\mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}};}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a63ba0bdeb00871deb6486f90a203a85c}{showDialog}}();}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_main_window_a10cb895c30b80593d7e287d6d647e8fe}{StartConfigurationDialog}}();}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a2d0617e59c26d5e7ab0729671fc2cb4b}{ERREUR}}(QJsonParseError\ Error);}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}}\ \mbox{\hyperlink{class_main_window_a9a2d613356c1fd9107d47b8fd5bdc565}{buildTGURmsg}}(QMqttMessage\ msg);}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a92172a4ac1e1a155705430b279dc649f}{UpdateModel}}(\mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}}\ Msg);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_ac91523afbfddc787b29cde9c4247e5b2}{InsertNewValueInTable}}(\mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}}\ Msg);}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a5c0405aa4344e0c45e4ce7cd56024a24}{UpdateTable}}(\mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}}\ Msg);}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_adfbb6e41fa3cd61f6cbc36847c6cd4ed}{getTGURMsg}}(\mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}}\ msg);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,62 @@
+\doxysection{TGURdata.\+h}
+\hypertarget{_t_g_u_rdata_8h_source}{}\label{_t_g_u_rdata_8h_source}\index{D:/Projetstage/VehicleStateManager/src/TGURdata.h@{D:/Projetstage/VehicleStateManager/src/TGURdata.h}}
+\mbox{\hyperlink{_t_g_u_rdata_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TGURDATA\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TGURDATA\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QMqttClient>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_types_and_defines_8h}{TypesAndDefines.h}}>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_t_g_u_rdata}{TGURdata}};}
+\DoxyCodeLine{00010\ \}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_t_g_u_rdata}{TGURdata}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_t_g_u_rdata}{TGURdata}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr},\ QMqttClient*\ i\_PtrClient\ =\ \textcolor{keyword}{nullptr},\mbox{\hyperlink{struct_configuration}{Configuration}}*\ Config=\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_t_g_u_rdata_ae8305222bb3ab3c99b7fde337cf73e59}{\string~TGURdata}}();}
+\DoxyCodeLine{00019\ \ \ \ \ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00022\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_g_u_rdata_aa450d634d0f11c58208cd5bfb547b2ca}{onconnectBtnclicked}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_g_u_rdata_a89c43fe5a1c8fb4de01566161b95359a}{saveinivalues}}(\textcolor{keyword}{const}\ QString\ \&path,\textcolor{keyword}{const}\ QString\ \&groupename,\textcolor{keyword}{const}\ QString\ \&Name,\textcolor{keyword}{const}\ QString\ \&Value);}
+\DoxyCodeLine{00024\ \ \ \ \ QString\ \mbox{\hyperlink{class_t_g_u_rdata_a6b041d3f31cdac93c60acde94de66f31}{readinivalues}}(\textcolor{keyword}{const}\ QString\ \&path,\textcolor{keyword}{const}\ QString\ \&groupename,\textcolor{keyword}{const}\ QString\ \&Name);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{/*void\ onWIFIBtnclicked();*/}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_g_u_rdata_aa9811aa630419357419c401a72ab3456}{onGSMBtn2clicked}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_g_u_rdata_af33f51e653099ef29fc479aeaeeb314c}{onWIFIBtn2clicked}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_g_u_rdata_ab35514655fcd31f04a37be8daf1b6b5c}{onComboBoxSECCurrentTextChanged}}(\textcolor{keyword}{const}\ QString\ \&arg1);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \ \ \ QMqttClient*\ \mbox{\hyperlink{class_t_g_u_rdata_a36d12e673ad42155428c75551ccba652}{m\_Client}}=\textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{struct_configuration}{Configuration}}*\ \mbox{\hyperlink{class_t_g_u_rdata_a4f5b5c22498a98c56fcdf7c946b462cf}{m\_Config}}=\textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00040\ \ \ \ \ Ui::TGURdata*\ \mbox{\hyperlink{class_t_g_u_rdata_a8e0296b3cdcebc17523ebfdb031e2f36}{ui}};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_t_g_u_rdata_a12d948a525fba4da654213e0c35d8221}{m\_FilledComboBoxes}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{//\ QDialog\ interface}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_g_u_rdata_a6f41f474ae47c40201206ce46e8eed98}{SaveConfiguration}}();}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_g_u_rdata_a114e32b7368ce57ba55d7571d10c0424}{SaveConfigurationInINI}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_g_u_rdata_a26d6abfe8d56f220463e3959b6258bce}{ReadconfigurationINI}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_g_u_rdata_ad42ba6afafb54168b77bf20d0362e236}{reject}}();}
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TGURDATA\_H}}
+
+\end{DoxyCode}

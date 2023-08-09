@@ -1,0 +1,7 @@
+<map id="DiagWindow" name="DiagWindow">
+<area shape="rect" id="Node000001" title="The DiagWindow class this is a class hello." alt="" coords="5,331,836,571"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="299,101,358,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="345,183,388,330,383,332,340,185"/>
+<area shape="rect" id="Node000003" href="$struct_t_g_u_r_msg.html" title=" " alt="" coords="382,5,646,267"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="478,267,464,315,458,314,473,266"/>
+</map>

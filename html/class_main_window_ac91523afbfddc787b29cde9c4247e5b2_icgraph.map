@@ -1,0 +1,11 @@
+<map id="MainWindow::InsertNewValueInTable" name="MainWindow::InsertNewValueInTable">
+<area shape="rect" id="Node000001" title=" " alt="" coords="992,5,1226,32"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a92172a4ac1e1a155705430b279dc649f" title=" " alt="" coords="764,5,944,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="977,21,944,21,944,16,977,16"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#a6a1b35a00e90ede04370917828d286d9" title=" " alt="" coords="494,5,716,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="749,21,717,21,717,16,749,16"/>
+<area shape="rect" id="Node000004" href="$class_main_window.html#aa9d6ac163502ea3f829f31d75b4aa0ab" title=" " alt="" coords="231,5,446,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="479,21,446,21,446,16,479,16"/>
+<area shape="rect" id="Node000005" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,183,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="216,21,183,21,183,16,216,16"/>
+</map>

@@ -1,0 +1,185 @@
+\doxysection{Diag\+Window Class Reference}
+\hypertarget{class_diag_window}{}\label{class_diag_window}\index{DiagWindow@{DiagWindow}}
+
+
+The \doxylink{class_diag_window}{Diag\+Window} class this is a class hello.  
+
+
+
+
+{\ttfamily \#include $<$Diag\+Window.\+h$>$}
+
+
+
+Inheritance diagram for Diag\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_diag_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Diag\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_diag_window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_diag_window_ab99a5748f624fb3dfb5994e3d971beda}{Diag\+Window}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr, int Serial\+Number=0, QMap$<$ long, \mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}} $>$ \texorpdfstring{$\ast$}{*}Current\+Data=nullptr, QMqtt\+Client \texorpdfstring{$\ast$}{*}i\+\_\+\+Ptr\+Client=nullptr)
+\item 
+\mbox{\hyperlink{class_diag_window_a8d0412a0cf9f481308fc6798b8c9b67c}{\texorpdfstring{$\sim$}{\string~}\+Diag\+Window}} ()
+\item 
+void \mbox{\hyperlink{class_diag_window_ac3a0cf931bd1e0d18fc119e3400fd2f5}{Updatecurrentdata}} (int serialnumber)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_diag_window_abd9cdbae1dc1051e74bc90a779a7db6f}{update\+Values}} ()
+\item 
+void \mbox{\hyperlink{class_diag_window_a08a8a164c569c2bf7bf3ed339c022bb2}{Enddiagclicked}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QMqtt\+Client \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_diag_window_adbe58fd80b143d650d5f6e0d0c401ebc}{m\+\_\+\+Client}} =nullptr
+\item 
+int \mbox{\hyperlink{class_diag_window_a29ef2e18955d4ccceda602a22aba49a4}{m\+\_\+\+Serial\+Number}} = -\/1
+\item 
+QMap$<$ long, \mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_diag_window_a5ebf663cc6c5f859f2d05d5c850e5c46}{m\+\_\+\+Current\+Data}} = nullptr
+\item 
+\mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}} \mbox{\hyperlink{class_diag_window_ab54d3c65212a9df58063d2a9242e0af3}{Message}}
+\item 
+Ui\+::\+Diag\+Window \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_diag_window_ad4cb750d8b70565466599b44d898fbdd}{ui}}
+\item 
+QStandard\+Item\+Model \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_diag_window_a4e8bf6b0ad0b2eb403b380982d6c6f6e}{Model}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_diag_window}{Diag\+Window} class this is a class hello. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_diag_window_ab99a5748f624fb3dfb5994e3d971beda}\label{class_diag_window_ab99a5748f624fb3dfb5994e3d971beda} 
+\index{DiagWindow@{DiagWindow}!DiagWindow@{DiagWindow}}
+\index{DiagWindow@{DiagWindow}!DiagWindow@{DiagWindow}}
+\doxysubsubsection{\texorpdfstring{DiagWindow()}{DiagWindow()}}
+{\footnotesize\ttfamily Diag\+Window\+::\+Diag\+Window (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr},  }\item[{int}]{Serial\+Number = {\ttfamily 0},  }\item[{QMap$<$ long, \mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}} $>$ \texorpdfstring{$\ast$}{*}}]{Current\+Data = {\ttfamily nullptr},  }\item[{QMqtt\+Client \texorpdfstring{$\ast$}{*}}]{i\+\_\+\+Ptr\+Client = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_diag_window_ab99a5748f624fb3dfb5994e3d971beda_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_diag_window_a8d0412a0cf9f481308fc6798b8c9b67c}\label{class_diag_window_a8d0412a0cf9f481308fc6798b8c9b67c} 
+\index{DiagWindow@{DiagWindow}!````~DiagWindow@{\texorpdfstring{$\sim$}{\string~}DiagWindow}}
+\index{````~DiagWindow@{\texorpdfstring{$\sim$}{\string~}DiagWindow}!DiagWindow@{DiagWindow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DiagWindow()}{\string~DiagWindow()}}
+{\footnotesize\ttfamily Diag\+Window\+::\texorpdfstring{$\sim$}{\string~}\+Diag\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_diag_window_a08a8a164c569c2bf7bf3ed339c022bb2}\label{class_diag_window_a08a8a164c569c2bf7bf3ed339c022bb2} 
+\index{DiagWindow@{DiagWindow}!Enddiagclicked@{Enddiagclicked}}
+\index{Enddiagclicked@{Enddiagclicked}!DiagWindow@{DiagWindow}}
+\doxysubsubsection{\texorpdfstring{Enddiagclicked()}{Enddiagclicked()}}
+{\footnotesize\ttfamily void Diag\+Window\+::\+Enddiagclicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_diag_window_a08a8a164c569c2bf7bf3ed339c022bb2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_diag_window_ac3a0cf931bd1e0d18fc119e3400fd2f5}\label{class_diag_window_ac3a0cf931bd1e0d18fc119e3400fd2f5} 
+\index{DiagWindow@{DiagWindow}!Updatecurrentdata@{Updatecurrentdata}}
+\index{Updatecurrentdata@{Updatecurrentdata}!DiagWindow@{DiagWindow}}
+\doxysubsubsection{\texorpdfstring{Updatecurrentdata()}{Updatecurrentdata()}}
+{\footnotesize\ttfamily void Diag\+Window\+::\+Updatecurrentdata (\begin{DoxyParamCaption}\item[{int}]{serialnumber }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_diag_window_ac3a0cf931bd1e0d18fc119e3400fd2f5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_diag_window_ac3a0cf931bd1e0d18fc119e3400fd2f5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_diag_window_abd9cdbae1dc1051e74bc90a779a7db6f}\label{class_diag_window_abd9cdbae1dc1051e74bc90a779a7db6f} 
+\index{DiagWindow@{DiagWindow}!updateValues@{updateValues}}
+\index{updateValues@{updateValues}!DiagWindow@{DiagWindow}}
+\doxysubsubsection{\texorpdfstring{updateValues()}{updateValues()}}
+{\footnotesize\ttfamily void Diag\+Window\+::update\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_diag_window_abd9cdbae1dc1051e74bc90a779a7db6f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_diag_window_adbe58fd80b143d650d5f6e0d0c401ebc}\label{class_diag_window_adbe58fd80b143d650d5f6e0d0c401ebc} 
+\index{DiagWindow@{DiagWindow}!m\_Client@{m\_Client}}
+\index{m\_Client@{m\_Client}!DiagWindow@{DiagWindow}}
+\doxysubsubsection{\texorpdfstring{m\_Client}{m\_Client}}
+{\footnotesize\ttfamily QMqtt\+Client\texorpdfstring{$\ast$}{*} Diag\+Window\+::m\+\_\+\+Client =nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_diag_window_a5ebf663cc6c5f859f2d05d5c850e5c46}\label{class_diag_window_a5ebf663cc6c5f859f2d05d5c850e5c46} 
+\index{DiagWindow@{DiagWindow}!m\_CurrentData@{m\_CurrentData}}
+\index{m\_CurrentData@{m\_CurrentData}!DiagWindow@{DiagWindow}}
+\doxysubsubsection{\texorpdfstring{m\_CurrentData}{m\_CurrentData}}
+{\footnotesize\ttfamily QMap$<$long,\mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}}$>$\texorpdfstring{$\ast$}{*} Diag\+Window\+::m\+\_\+\+Current\+Data = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_diag_window_a29ef2e18955d4ccceda602a22aba49a4}\label{class_diag_window_a29ef2e18955d4ccceda602a22aba49a4} 
+\index{DiagWindow@{DiagWindow}!m\_SerialNumber@{m\_SerialNumber}}
+\index{m\_SerialNumber@{m\_SerialNumber}!DiagWindow@{DiagWindow}}
+\doxysubsubsection{\texorpdfstring{m\_SerialNumber}{m\_SerialNumber}}
+{\footnotesize\ttfamily int Diag\+Window\+::m\+\_\+\+Serial\+Number = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_diag_window_ab54d3c65212a9df58063d2a9242e0af3}\label{class_diag_window_ab54d3c65212a9df58063d2a9242e0af3} 
+\index{DiagWindow@{DiagWindow}!Message@{Message}}
+\index{Message@{Message}!DiagWindow@{DiagWindow}}
+\doxysubsubsection{\texorpdfstring{Message}{Message}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}} Diag\+Window\+::\+Message\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_diag_window_a4e8bf6b0ad0b2eb403b380982d6c6f6e}\label{class_diag_window_a4e8bf6b0ad0b2eb403b380982d6c6f6e} 
+\index{DiagWindow@{DiagWindow}!Model@{Model}}
+\index{Model@{Model}!DiagWindow@{DiagWindow}}
+\doxysubsubsection{\texorpdfstring{Model}{Model}}
+{\footnotesize\ttfamily QStandard\+Item\+Model\texorpdfstring{$\ast$}{*} Diag\+Window\+::\+Model = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_diag_window_ad4cb750d8b70565466599b44d898fbdd}\label{class_diag_window_ad4cb750d8b70565466599b44d898fbdd} 
+\index{DiagWindow@{DiagWindow}!ui@{ui}}
+\index{ui@{ui}!DiagWindow@{DiagWindow}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Diag\+Window\texorpdfstring{$\ast$}{*} Diag\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Projetstage/\+Vehicle\+State\+Manager/src/\mbox{\hyperlink{_diag_window_8h}{Diag\+Window.\+h}}\item 
+D\+:/\+Projetstage/\+Vehicle\+State\+Manager/src/\mbox{\hyperlink{_diag_window_8cpp}{Diag\+Window.\+cpp}}\end{DoxyCompactItemize}

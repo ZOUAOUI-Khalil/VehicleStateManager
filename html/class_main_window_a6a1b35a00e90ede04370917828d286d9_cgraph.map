@@ -1,0 +1,15 @@
+<map id="MainWindow::onMessageReceived" name="MainWindow::onMessageReceived">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,228,83"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a9a2d613356c1fd9107d47b8fd5bdc565" title=" " alt="" coords="276,19,466,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,53,261,45,261,51,212,58"/>
+<area shape="rect" id="Node000004" href="$class_main_window.html#a92172a4ac1e1a155705430b279dc649f" title=" " alt="" coords="281,81,461,108"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,78,266,82,266,87,228,83"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#a2d0617e59c26d5e7ab0729671fc2cb4b" title=" " alt="" coords="553,5,710,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="467,24,538,21,538,26,467,30"/>
+<area shape="rect" id="Node000005" href="$class_main_window.html#adb25055dcfe673607c1f9fa57fcc8e96" title=" " alt="" coords="523,56,740,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="461,83,507,79,508,84,461,89"/>
+<area shape="rect" id="Node000006" href="$class_main_window.html#ac91523afbfddc787b29cde9c4247e5b2" title=" " alt="" coords="514,107,748,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="461,101,500,105,499,110,461,106"/>
+<area shape="rect" id="Node000007" href="$class_main_window.html#a5c0405aa4344e0c45e4ce7cd56024a24" title=" " alt="" coords="544,157,719,184"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="408,106,515,143,546,151,544,156,513,148,406,111"/>
+</map>

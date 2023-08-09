@@ -1,0 +1,9 @@
+<map id="MainWindow::UpdateModel" name="MainWindow::UpdateModel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,185,83"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#adb25055dcfe673607c1f9fa57fcc8e96" title=" " alt="" coords="241,5,459,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,53,265,33,266,38,166,58"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#ac91523afbfddc787b29cde9c4247e5b2" title=" " alt="" coords="233,56,467,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,67,218,67,218,72,185,72"/>
+<area shape="rect" id="Node000004" href="$class_main_window.html#a5c0405aa4344e0c45e4ce7cd56024a24" title=" " alt="" coords="262,107,438,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="166,81,266,101,265,106,165,86"/>
+</map>

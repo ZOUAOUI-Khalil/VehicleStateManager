@@ -1,0 +1,9 @@
+<map id="TGURdata::onconnectBtnclicked" name="TGURdata::onconnectBtnclicked">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,216,32"/>
+<area shape="rect" id="Node000002" href="$class_t_g_u_rdata.html#a6f41f474ae47c40201206ce46e8eed98" title=" " alt="" coords="264,5,456,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,16,249,16,249,21,216,21"/>
+<area shape="rect" id="Node000003" href="$class_t_g_u_rdata.html#a114e32b7368ce57ba55d7571d10c0424" title=" " alt="" coords="504,5,721,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="456,16,489,16,489,21,456,21"/>
+<area shape="rect" id="Node000004" href="$class_t_g_u_rdata.html#a89c43fe5a1c8fb4de01566161b95359a" title=" " alt="" coords="769,5,934,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="722,16,754,16,754,21,722,21"/>
+</map>

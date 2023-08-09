@@ -1,0 +1,46 @@
+\doxysection{Types\+And\+Defines.\+h}
+\hypertarget{_types_and_defines_8h_source}{}\label{_types_and_defines_8h_source}\index{D:/Projetstage/VehicleStateManager/src/TypesAndDefines.h@{D:/Projetstage/VehicleStateManager/src/TypesAndDefines.h}}
+\mbox{\hyperlink{_types_and_defines_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TYPESANDDEFINES\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TYPESANDDEFINES\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_configuration}{Configuration}}\{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_configuration_aba3ab33bd634c075f4d0a964cab8b7d7}{QOS}};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_configuration_a2485b14ea11a35290b3eacee1d56e669}{Port}};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_configuration_ac0af3a8e3b27cf286ee15ff35d8547d1}{SecurityLevel}};}
+\DoxyCodeLine{00012\ \ \ \ \ QString\ \mbox{\hyperlink{struct_configuration_ac073535ef161fc6c216798b528126c04}{Username}};}
+\DoxyCodeLine{00013\ \ \ \ \ QString\ \mbox{\hyperlink{struct_configuration_a2fe5772adf16d3f649b33c30623edfb0}{Password}};}
+\DoxyCodeLine{00014\ \ \ \ \ QString\ \mbox{\hyperlink{struct_configuration_a8ba94034baec3cf087dd186f828a01fd}{Host}};}
+\DoxyCodeLine{00015\ \ \ \ \ QString\ \mbox{\hyperlink{struct_configuration_abc303bdc0928fc252863305100c7e3be}{Topic}};}
+\DoxyCodeLine{00016\ \ \ \ \ QString\ \mbox{\hyperlink{struct_configuration_a06d71b1a0d133dd7b63e4e9f68de3d5c}{Certif}};}
+\DoxyCodeLine{00017\ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}}\{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{struct_t_g_u_r_msg_a9526a19c3dbb857673f86eeccfc742bb}{timestamp}};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{struct_t_g_u_r_msg_af0d858252401fbd1c703aee3d5b37000}{TransmissionPeriod}};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{struct_t_g_u_r_msg_a68633a2250a5ce7f3bbe3b724052dfae}{SerialNumber}}\ ;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{long}\ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{struct_t_g_u_r_msg_aec4a502a0d364cde2fed3f09b34ec041}{IMEI}};}
+\DoxyCodeLine{00025\ \ \ \ \ QString\ \mbox{\hyperlink{struct_t_g_u_r_msg_a690e797c909349add1532468e220baef}{NetworkStatus}};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_t_g_u_r_msg_ace051232411fcbb9a384a5620e012003}{SignalStrength}};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_t_g_u_r_msg_ac1ca4331f32f9cb523427087e43d9347}{DiagnosticStatus}};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_t_g_u_r_msg_a223ed3d5185fd1a0b85efc5eb771c32d}{APC}};}
+\DoxyCodeLine{00029\ \ \ \ \ QString\ \mbox{\hyperlink{struct_t_g_u_r_msg_a2ceca5f11eb7a6e40c1f6189efc562d9}{VIN}};}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{struct_t_g_u_r_msg_ae140e88a794f76e7b18d87ac6734132d}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_t_g_u_r_msg}{TGURMsg}}\ \&\ \ Msg)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_t_g_u_r_msg_a68633a2250a5ce7f3bbe3b724052dfae}{SerialNumber}}\ ==\ Msg.\mbox{\hyperlink{struct_t_g_u_r_msg_a68633a2250a5ce7f3bbe3b724052dfae}{SerialNumber}};}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//Current\ Memory:}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_t_g_u_r_msg_a485b45f0355e3e3ae3174c44fc6deac3}{RowInWindow}};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TYPESANDDEFINES\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,303 @@
+\doxysection{TGURdata Class Reference}
+\hypertarget{class_t_g_u_rdata}{}\label{class_t_g_u_rdata}\index{TGURdata@{TGURdata}}
+
+
+{\ttfamily \#include $<$TGURdata.\+h$>$}
+
+
+
+Inheritance diagram for TGURdata\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for TGURdata\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_g_u_rdata_aa450d634d0f11c58208cd5bfb547b2ca}{onconnect\+Btnclicked}} ()
+\item 
+void \mbox{\hyperlink{class_t_g_u_rdata_a89c43fe5a1c8fb4de01566161b95359a}{saveinivalues}} (const QString \&path, const QString \&groupename, const QString \&Name, const QString \&Value)
+\item 
+QString \mbox{\hyperlink{class_t_g_u_rdata_a6b041d3f31cdac93c60acde94de66f31}{readinivalues}} (const QString \&path, const QString \&groupename, const QString \&Name)
+\item 
+void \mbox{\hyperlink{class_t_g_u_rdata_ad42ba6afafb54168b77bf20d0362e236}{reject}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_g_u_rdata_aecc600af524a7ddfde854d7448632d0e}{TGURdata}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr, QMqtt\+Client \texorpdfstring{$\ast$}{*}i\+\_\+\+Ptr\+Client=nullptr, \mbox{\hyperlink{struct_configuration}{Configuration}} \texorpdfstring{$\ast$}{*}Config=nullptr)
+\item 
+\mbox{\hyperlink{class_t_g_u_rdata_ae8305222bb3ab3c99b7fde337cf73e59}{\texorpdfstring{$\sim$}{\string~}\+TGURdata}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_g_u_rdata_aa9811aa630419357419c401a72ab3456}{on\+GSMBtn2clicked}} ()
+\item 
+void \mbox{\hyperlink{class_t_g_u_rdata_af33f51e653099ef29fc479aeaeeb314c}{on\+WIFIBtn2clicked}} ()
+\item 
+void \mbox{\hyperlink{class_t_g_u_rdata_ab35514655fcd31f04a37be8daf1b6b5c}{on\+Combo\+Box\+SECCurrent\+Text\+Changed}} (const QString \&arg1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_g_u_rdata_a6f41f474ae47c40201206ce46e8eed98}{Save\+Configuration}} ()
+\item 
+void \mbox{\hyperlink{class_t_g_u_rdata_a114e32b7368ce57ba55d7571d10c0424}{Save\+Configuration\+In\+INI}} ()
+\item 
+void \mbox{\hyperlink{class_t_g_u_rdata_a26d6abfe8d56f220463e3959b6258bce}{Readconfiguration\+INI}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QMqtt\+Client \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_t_g_u_rdata_a36d12e673ad42155428c75551ccba652}{m\+\_\+\+Client}} =nullptr
+\item 
+\mbox{\hyperlink{struct_configuration}{Configuration}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_t_g_u_rdata_a4f5b5c22498a98c56fcdf7c946b462cf}{m\+\_\+\+Config}} =nullptr
+\item 
+Ui\+::\+TGURdata \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_t_g_u_rdata_a8e0296b3cdcebc17523ebfdb031e2f36}{ui}}
+\item 
+bool \mbox{\hyperlink{class_t_g_u_rdata_a12d948a525fba4da654213e0c35d8221}{m\+\_\+\+Filled\+Combo\+Boxes}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_t_g_u_rdata_aecc600af524a7ddfde854d7448632d0e}\label{class_t_g_u_rdata_aecc600af524a7ddfde854d7448632d0e} 
+\index{TGURdata@{TGURdata}!TGURdata@{TGURdata}}
+\index{TGURdata@{TGURdata}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{TGURdata()}{TGURdata()}}
+{\footnotesize\ttfamily TGURdata\+::\+TGURdata (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr},  }\item[{QMqtt\+Client \texorpdfstring{$\ast$}{*}}]{i\+\_\+\+Ptr\+Client = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{struct_configuration}{Configuration}} \texorpdfstring{$\ast$}{*}}]{Config = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_aecc600af524a7ddfde854d7448632d0e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_t_g_u_rdata_ae8305222bb3ab3c99b7fde337cf73e59}\label{class_t_g_u_rdata_ae8305222bb3ab3c99b7fde337cf73e59} 
+\index{TGURdata@{TGURdata}!````~TGURdata@{\texorpdfstring{$\sim$}{\string~}TGURdata}}
+\index{````~TGURdata@{\texorpdfstring{$\sim$}{\string~}TGURdata}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TGURdata()}{\string~TGURdata()}}
+{\footnotesize\ttfamily TGURdata\+::\texorpdfstring{$\sim$}{\string~}\+TGURdata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_t_g_u_rdata_ab35514655fcd31f04a37be8daf1b6b5c}\label{class_t_g_u_rdata_ab35514655fcd31f04a37be8daf1b6b5c} 
+\index{TGURdata@{TGURdata}!onComboBoxSECCurrentTextChanged@{onComboBoxSECCurrentTextChanged}}
+\index{onComboBoxSECCurrentTextChanged@{onComboBoxSECCurrentTextChanged}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{onComboBoxSECCurrentTextChanged}{onComboBoxSECCurrentTextChanged}}
+{\footnotesize\ttfamily void TGURdata\+::on\+Combo\+Box\+SECCurrent\+Text\+Changed (\begin{DoxyParamCaption}\item[{const QString \&}]{arg1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_ab35514655fcd31f04a37be8daf1b6b5c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_ab35514655fcd31f04a37be8daf1b6b5c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_t_g_u_rdata_aa450d634d0f11c58208cd5bfb547b2ca}\label{class_t_g_u_rdata_aa450d634d0f11c58208cd5bfb547b2ca} 
+\index{TGURdata@{TGURdata}!onconnectBtnclicked@{onconnectBtnclicked}}
+\index{onconnectBtnclicked@{onconnectBtnclicked}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{onconnectBtnclicked}{onconnectBtnclicked}}
+{\footnotesize\ttfamily void TGURdata\+::onconnect\+Btnclicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_aa450d634d0f11c58208cd5bfb547b2ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_aa450d634d0f11c58208cd5bfb547b2ca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_t_g_u_rdata_aa9811aa630419357419c401a72ab3456}\label{class_t_g_u_rdata_aa9811aa630419357419c401a72ab3456} 
+\index{TGURdata@{TGURdata}!onGSMBtn2clicked@{onGSMBtn2clicked}}
+\index{onGSMBtn2clicked@{onGSMBtn2clicked}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{onGSMBtn2clicked}{onGSMBtn2clicked}}
+{\footnotesize\ttfamily void TGURdata\+::on\+GSMBtn2clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_aa9811aa630419357419c401a72ab3456_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_t_g_u_rdata_af33f51e653099ef29fc479aeaeeb314c}\label{class_t_g_u_rdata_af33f51e653099ef29fc479aeaeeb314c} 
+\index{TGURdata@{TGURdata}!onWIFIBtn2clicked@{onWIFIBtn2clicked}}
+\index{onWIFIBtn2clicked@{onWIFIBtn2clicked}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{onWIFIBtn2clicked}{onWIFIBtn2clicked}}
+{\footnotesize\ttfamily void TGURdata\+::on\+WIFIBtn2clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_af33f51e653099ef29fc479aeaeeb314c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_t_g_u_rdata_a26d6abfe8d56f220463e3959b6258bce}\label{class_t_g_u_rdata_a26d6abfe8d56f220463e3959b6258bce} 
+\index{TGURdata@{TGURdata}!ReadconfigurationINI@{ReadconfigurationINI}}
+\index{ReadconfigurationINI@{ReadconfigurationINI}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{ReadconfigurationINI()}{ReadconfigurationINI()}}
+{\footnotesize\ttfamily void TGURdata\+::\+Readconfiguration\+INI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_a26d6abfe8d56f220463e3959b6258bce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_a26d6abfe8d56f220463e3959b6258bce_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_t_g_u_rdata_a6b041d3f31cdac93c60acde94de66f31}\label{class_t_g_u_rdata_a6b041d3f31cdac93c60acde94de66f31} 
+\index{TGURdata@{TGURdata}!readinivalues@{readinivalues}}
+\index{readinivalues@{readinivalues}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{readinivalues}{readinivalues}}
+{\footnotesize\ttfamily QString TGURdata\+::readinivalues (\begin{DoxyParamCaption}\item[{const QString \&}]{path,  }\item[{const QString \&}]{groupename,  }\item[{const QString \&}]{Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_a6b041d3f31cdac93c60acde94de66f31_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_t_g_u_rdata_ad42ba6afafb54168b77bf20d0362e236}\label{class_t_g_u_rdata_ad42ba6afafb54168b77bf20d0362e236} 
+\index{TGURdata@{TGURdata}!reject@{reject}}
+\index{reject@{reject}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{reject}{reject}}
+{\footnotesize\ttfamily void TGURdata\+::reject (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+\Hypertarget{class_t_g_u_rdata_a6f41f474ae47c40201206ce46e8eed98}\label{class_t_g_u_rdata_a6f41f474ae47c40201206ce46e8eed98} 
+\index{TGURdata@{TGURdata}!SaveConfiguration@{SaveConfiguration}}
+\index{SaveConfiguration@{SaveConfiguration}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{SaveConfiguration()}{SaveConfiguration()}}
+{\footnotesize\ttfamily void TGURdata\+::\+Save\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_a6f41f474ae47c40201206ce46e8eed98_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_a6f41f474ae47c40201206ce46e8eed98_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_t_g_u_rdata_a114e32b7368ce57ba55d7571d10c0424}\label{class_t_g_u_rdata_a114e32b7368ce57ba55d7571d10c0424} 
+\index{TGURdata@{TGURdata}!SaveConfigurationInINI@{SaveConfigurationInINI}}
+\index{SaveConfigurationInINI@{SaveConfigurationInINI}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{SaveConfigurationInINI()}{SaveConfigurationInINI()}}
+{\footnotesize\ttfamily void TGURdata\+::\+Save\+Configuration\+In\+INI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_a114e32b7368ce57ba55d7571d10c0424_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_a114e32b7368ce57ba55d7571d10c0424_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_t_g_u_rdata_a89c43fe5a1c8fb4de01566161b95359a}\label{class_t_g_u_rdata_a89c43fe5a1c8fb4de01566161b95359a} 
+\index{TGURdata@{TGURdata}!saveinivalues@{saveinivalues}}
+\index{saveinivalues@{saveinivalues}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{saveinivalues}{saveinivalues}}
+{\footnotesize\ttfamily void TGURdata\+::saveinivalues (\begin{DoxyParamCaption}\item[{const QString \&}]{path,  }\item[{const QString \&}]{groupename,  }\item[{const QString \&}]{Name,  }\item[{const QString \&}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_g_u_rdata_a89c43fe5a1c8fb4de01566161b95359a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_t_g_u_rdata_a36d12e673ad42155428c75551ccba652}\label{class_t_g_u_rdata_a36d12e673ad42155428c75551ccba652} 
+\index{TGURdata@{TGURdata}!m\_Client@{m\_Client}}
+\index{m\_Client@{m\_Client}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{m\_Client}{m\_Client}}
+{\footnotesize\ttfamily QMqtt\+Client\texorpdfstring{$\ast$}{*} TGURdata\+::m\+\_\+\+Client =nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_t_g_u_rdata_a4f5b5c22498a98c56fcdf7c946b462cf}\label{class_t_g_u_rdata_a4f5b5c22498a98c56fcdf7c946b462cf} 
+\index{TGURdata@{TGURdata}!m\_Config@{m\_Config}}
+\index{m\_Config@{m\_Config}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{m\_Config}{m\_Config}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_configuration}{Configuration}}\texorpdfstring{$\ast$}{*} TGURdata\+::m\+\_\+\+Config =nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_t_g_u_rdata_a12d948a525fba4da654213e0c35d8221}\label{class_t_g_u_rdata_a12d948a525fba4da654213e0c35d8221} 
+\index{TGURdata@{TGURdata}!m\_FilledComboBoxes@{m\_FilledComboBoxes}}
+\index{m\_FilledComboBoxes@{m\_FilledComboBoxes}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{m\_FilledComboBoxes}{m\_FilledComboBoxes}}
+{\footnotesize\ttfamily bool TGURdata\+::m\+\_\+\+Filled\+Combo\+Boxes = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_t_g_u_rdata_a8e0296b3cdcebc17523ebfdb031e2f36}\label{class_t_g_u_rdata_a8e0296b3cdcebc17523ebfdb031e2f36} 
+\index{TGURdata@{TGURdata}!ui@{ui}}
+\index{ui@{ui}!TGURdata@{TGURdata}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+TGURdata\texorpdfstring{$\ast$}{*} TGURdata\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Projetstage/\+Vehicle\+State\+Manager/src/\mbox{\hyperlink{_t_g_u_rdata_8h}{TGURdata.\+h}}\item 
+D\+:/\+Projetstage/\+Vehicle\+State\+Manager/src/\mbox{\hyperlink{_t_g_u_rdata_8cpp}{TGURdata.\+cpp}}\end{DoxyCompactItemize}
