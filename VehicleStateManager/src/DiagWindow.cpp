@@ -81,7 +81,11 @@ DiagWindow::DiagWindow(QWidget *parent, int SerialNumber, QMap<long, TGURMsg> *C
     ui->setupUi(this);
     ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeMode::Stretch);
     setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint); //poue éliminer le point d'interrogation
-    setWindowTitle("DiagWindow");
+    setWindowTitle("TGU-R data");
+    QIcon icon("D:\\Projetstage\\VehicleStateManager\\media\\info.png"); // Use a valid path or resource URL
+    // Set the window icon
+    setWindowIcon(icon);
+
     connect(ui->pushButton, &QPushButton::clicked, this, &DiagWindow::Enddiagclicked);
 
     connect(this, &DiagWindow::destroyed, this, &DiagWindow::CroixRouge);

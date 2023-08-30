@@ -17,6 +17,7 @@ TGURdata::TGURdata(QWidget *parent,QMqttClient* i_PtrClient, Configuration* i_pt
     ui(new Ui::TGURdata)
 {
     ui->setupUi(this);
+    //TGURdata *dialog = new TGURdata(this);
     connect(ui->Connection, &QPushButton::clicked, this, &TGURdata::onconnectBtnclicked); //Connect
     connect(ui->GSMBtn_2, &QRadioButton::clicked, this, &TGURdata::onGSMBtn2clicked);   // GSM
     connect(ui->WIFIBtn_2, &QRadioButton::clicked, this, &TGURdata::onWIFIBtn2clicked); // WIFI
@@ -24,6 +25,10 @@ TGURdata::TGURdata(QWidget *parent,QMqttClient* i_PtrClient, Configuration* i_pt
 
     setWindowTitle("Connexion");
     setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint); //poue éliminer le point d'interrogation
+    QIcon icon("D:\\Projetstage\\VehicleStateManager\\media\\connexion.png"); // Use a valid path or resource URL
+
+    // Set the window icon
+    setWindowIcon(icon);
 
     //ui->lineEdit_certif->setWhatsThis("This is a certification for Qos =2"); point d'interrogation
 
@@ -37,6 +42,7 @@ TGURdata::TGURdata(QWidget *parent,QMqttClient* i_PtrClient, Configuration* i_pt
     ui->Login->setEnabled(false);
     ui->Password->setEnabled(false);
     ui->lineEdit_certif->setEnabled(false);
+
 }
 
 
@@ -233,7 +239,7 @@ void TGURdata::onWIFIBtn2clicked()
     ui->Port->setEnabled(true);
     ui->QOS->setEnabled(true);
     ui->Topic->setEnabled(true);
-    ui->Topic->setText("VehicleDigState/#");
+    ui->Topic->setText("VehicleDiagState/#");
     ui->SecurityLevel->setEnabled(true);
 
     ReadconfigurationINIWIFI();

@@ -29,6 +29,7 @@ class Ui_TGURdata
 public:
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
+    QLabel *label_11;
     QLabel *label_9;
     QRadioButton *GSMBtn_2;
     QRadioButton *WIFIBtn_2;
@@ -72,19 +73,46 @@ public:
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        label_11 = new QLabel(TGURdata);
+        label_11->setObjectName(QString::fromUtf8("label_11"));
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(label_11->sizePolicy().hasHeightForWidth());
+        label_11->setSizePolicy(sizePolicy);
+        label_11->setMinimumSize(QSize(0, 0));
+        label_11->setMaximumSize(QSize(100, 100));
+        label_11->setFrameShape(QFrame::NoFrame);
+        label_11->setFrameShadow(QFrame::Plain);
+        label_11->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/icons8-choose-48.png")));
+        label_11->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
+        label_11->setMargin(5);
+        label_11->setIndent(0);
+
+        horizontalLayout->addWidget(label_11);
+
         label_9 = new QLabel(TGURdata);
         label_9->setObjectName(QString::fromUtf8("label_9"));
+        QFont font;
+        font.setPointSize(14);
+        font.setBold(true);
+        label_9->setFont(font);
 
         horizontalLayout->addWidget(label_9);
 
         GSMBtn_2 = new QRadioButton(TGURdata);
         GSMBtn_2->setObjectName(QString::fromUtf8("GSMBtn_2"));
+        QFont font1;
+        font1.setPointSize(12);
+        font1.setBold(true);
+        GSMBtn_2->setFont(font1);
 
         horizontalLayout->addWidget(GSMBtn_2);
 
         WIFIBtn_2 = new QRadioButton(TGURdata);
         WIFIBtn_2->setObjectName(QString::fromUtf8("WIFIBtn_2"));
         WIFIBtn_2->setMinimumSize(QSize(0, 30));
+        WIFIBtn_2->setFont(font1);
 
         horizontalLayout->addWidget(WIFIBtn_2);
 
@@ -96,6 +124,12 @@ public:
         label_10 = new QLabel(TGURdata);
         label_10->setObjectName(QString::fromUtf8("label_10"));
         label_10->setMinimumSize(QSize(105, 0));
+        QFont font2;
+        font2.setPointSize(10);
+        label_10->setFont(font2);
+        label_10->setFrameShape(QFrame::Panel);
+        label_10->setFrameShadow(QFrame::Sunken);
+        label_10->setLineWidth(0);
 
         horizontalLayout_2->addWidget(label_10);
 
@@ -112,6 +146,7 @@ public:
         label = new QLabel(TGURdata);
         label->setObjectName(QString::fromUtf8("label"));
         label->setMinimumSize(QSize(105, 0));
+        label->setFont(font2);
 
         horizontalLayout_4->addWidget(label);
 
@@ -127,22 +162,23 @@ public:
         horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
         label_2 = new QLabel(TGURdata);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
-        label_2->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
+        label_2->setSizePolicy(sizePolicy1);
         label_2->setMinimumSize(QSize(105, 0));
+        label_2->setFont(font2);
 
         horizontalLayout_5->addWidget(label_2);
 
         Port = new QSpinBox(TGURdata);
         Port->setObjectName(QString::fromUtf8("Port"));
-        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Fixed);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(Port->sizePolicy().hasHeightForWidth());
-        Port->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy2(QSizePolicy::Expanding, QSizePolicy::Fixed);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(Port->sizePolicy().hasHeightForWidth());
+        Port->setSizePolicy(sizePolicy2);
         Port->setMaximum(9999);
 
         horizontalLayout_5->addWidget(Port);
@@ -154,16 +190,17 @@ public:
         horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
         label_3 = new QLabel(TGURdata);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        sizePolicy.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
-        label_3->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
+        label_3->setSizePolicy(sizePolicy1);
         label_3->setMinimumSize(QSize(105, 0));
+        label_3->setFont(font2);
 
         horizontalLayout_6->addWidget(label_3);
 
         QOS = new QComboBox(TGURdata);
         QOS->setObjectName(QString::fromUtf8("QOS"));
-        sizePolicy1.setHeightForWidth(QOS->sizePolicy().hasHeightForWidth());
-        QOS->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(QOS->sizePolicy().hasHeightForWidth());
+        QOS->setSizePolicy(sizePolicy2);
 
         horizontalLayout_6->addWidget(QOS);
 
@@ -174,12 +211,13 @@ public:
         horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
         label_4 = new QLabel(TGURdata);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Preferred);
-        sizePolicy2.setHorizontalStretch(0);
-        sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(label_4->sizePolicy().hasHeightForWidth());
-        label_4->setSizePolicy(sizePolicy2);
+        QSizePolicy sizePolicy3(QSizePolicy::Fixed, QSizePolicy::Preferred);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(label_4->sizePolicy().hasHeightForWidth());
+        label_4->setSizePolicy(sizePolicy3);
         label_4->setMinimumSize(QSize(105, 0));
+        label_4->setFont(font2);
 
         horizontalLayout_7->addWidget(label_4);
 
@@ -196,16 +234,17 @@ public:
         horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
         label_5 = new QLabel(TGURdata);
         label_5->setObjectName(QString::fromUtf8("label_5"));
-        sizePolicy2.setHeightForWidth(label_5->sizePolicy().hasHeightForWidth());
-        label_5->setSizePolicy(sizePolicy2);
+        sizePolicy3.setHeightForWidth(label_5->sizePolicy().hasHeightForWidth());
+        label_5->setSizePolicy(sizePolicy3);
         label_5->setMinimumSize(QSize(105, 0));
+        label_5->setFont(font2);
 
         horizontalLayout_8->addWidget(label_5);
 
         SecurityLevel = new QComboBox(TGURdata);
         SecurityLevel->setObjectName(QString::fromUtf8("SecurityLevel"));
-        sizePolicy1.setHeightForWidth(SecurityLevel->sizePolicy().hasHeightForWidth());
-        SecurityLevel->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(SecurityLevel->sizePolicy().hasHeightForWidth());
+        SecurityLevel->setSizePolicy(sizePolicy2);
 
         horizontalLayout_8->addWidget(SecurityLevel);
 
@@ -217,6 +256,7 @@ public:
         label_6 = new QLabel(TGURdata);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setMinimumSize(QSize(105, 0));
+        label_6->setFont(font2);
 
         horizontalLayout_9->addWidget(label_6);
 
@@ -233,6 +273,7 @@ public:
         label_7 = new QLabel(TGURdata);
         label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setMinimumSize(QSize(105, 0));
+        label_7->setFont(font2);
 
         horizontalLayout_10->addWidget(label_7);
 
@@ -250,6 +291,7 @@ public:
         label_8 = new QLabel(TGURdata);
         label_8->setObjectName(QString::fromUtf8("label_8"));
         label_8->setMinimumSize(QSize(105, 0));
+        label_8->setFont(font2);
 
         horizontalLayout_11->addWidget(label_8);
 
@@ -270,11 +312,12 @@ public:
         Connection = new QPushButton(TGURdata);
         Connection->setObjectName(QString::fromUtf8("Connection"));
         Connection->setEnabled(true);
-        QSizePolicy sizePolicy3(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy3.setHorizontalStretch(0);
-        sizePolicy3.setVerticalStretch(0);
-        sizePolicy3.setHeightForWidth(Connection->sizePolicy().hasHeightForWidth());
-        Connection->setSizePolicy(sizePolicy3);
+        QSizePolicy sizePolicy4(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy4.setHorizontalStretch(0);
+        sizePolicy4.setVerticalStretch(0);
+        sizePolicy4.setHeightForWidth(Connection->sizePolicy().hasHeightForWidth());
+        Connection->setSizePolicy(sizePolicy4);
+        Connection->setFocusPolicy(Qt::StrongFocus);
 
         horizontalLayout_3->addWidget(Connection);
 
@@ -290,6 +333,7 @@ public:
     void retranslateUi(QDialog *TGURdata)
     {
         TGURdata->setWindowTitle(QCoreApplication::translate("TGURdata", "Dialog", nullptr));
+        label_11->setText(QString());
         label_9->setText(QCoreApplication::translate("TGURdata", "Mode :", nullptr));
         GSMBtn_2->setText(QCoreApplication::translate("TGURdata", "GSM", nullptr));
         WIFIBtn_2->setText(QCoreApplication::translate("TGURdata", "WIFI", nullptr));

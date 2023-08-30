@@ -1,0 +1,62 @@
+/*QStandardItemModel *model = new QStandardItemModel(4, 3);
+        model->setHorizontalHeaderLabels({ "Colonne 1", "Colonne 2", "Colonne 3" });
+
+        // Remplir le modèle avec des données
+        for (int row = 0; row < 4; ++row) {
+            for (int col = 0; col < 3; ++col) {
+                QString text = QString("Ligne %1, Colonne %2").arg(row + 1).arg(col + 1);
+                QStandardItem *item = new QStandardItem(text);
+                model->setItem(row, col, item);
+            }
+        }
+
+        // Créer une vue de table
+        QTableView *tableView = new QTableView(this);
+        tableView->setModel(model);
+        // Définir les options d'affichage
+        tableView->horizontalHeader()->setStretchLastSection(true);
+        tableView->setAlternatingRowColors(true);*/
+// table view Baha
+/* QStandardItem *item = new QStandardItem();
+    item->setText("ID1");
+    // item->setData()
+
+
+    QStandardItem *item1 = new QStandardItem();
+    item1->setText("Temps1");
+    QStandardItem *item2 = new QStandardItem();
+    item2->setText("ID2");
+    QStandardItem *item3 = new QStandardItem();
+    item3->setText("Temps2");
+
+
+
+    int row = 0;
+    m_Model->setItem(row, 0, item);
+    m_Model->setItem(row++, 1, item1);
+    qDebug () << row ;
+    m_Model->setItem(row, 0, item2);
+    m_Model->setItem(row++, 1, item3) ;
+    qDebug () << row ;
+    m_Model->setItem(row, 0, item) ;
+    m_Model->setItem(row++, 1, item1) ;*/
+
+
+
+
+___________________________           _____________________
+| MySingletonClassSingleton |         |      MyOtherClass    |
+|---------------------------|         |---------------------|
+| +getInstance() : MySingletonClassSingleton |       +connect() : void |
+| +getLogin() : String      |         |---------------------|
+| +getPassword() : String   |          
+| +connect() : void         |          
+|---------------------------|
+
+
+
+
+
+
+
+

@@ -40,7 +40,7 @@ public slots:
     void onMessageReceived(QMqttMessage msg);
     void refresh();
     void TCPConnected();
-    void TCPMsg();
+    //void TCPMsg();
     /*void saveinivalues(const QString &path,const QString &groupename,const QString &Name,const QString &Value);
     QString readinivalues(const QString &path,const QString &groupename,const QString &Name);*/
 

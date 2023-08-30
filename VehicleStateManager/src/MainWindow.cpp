@@ -18,8 +18,36 @@
 int MainWindow::StartConfigurationDialog()
 {
     TGURdata *Dialog = new TGURdata(nullptr,m_Client,&m_Configuration);
+//
+    QPalette CurrentDialogPalette = Dialog->palette();
+
+    CurrentDialogPalette.setColor(QPalette::Window, QColor("#f6f6ee")); // Couleur de fond
+    CurrentDialogPalette.setColor(QPalette::WindowText, QColor("#264d00")); // Couleur du texte #336600
+    //CurrentDialogPalette.setColor(QPalette::Button, QColor("#ffffff")); // Couleur des boutons
+    //CurrentDialogPalette.setColor(QPalette::Button, QColor("#ffffff")); // Couleur des boutons
+    // ... définissez d'autres couleurs selon vos besoins
+
+    QBrush CurrentDialogbrush =CurrentDialogPalette.brush(QPalette::Window);
+    //CurrentDialogbrush.setColor(QColor("#cccc99"));
+    //CurrentDialogbrush.setStyle(Qt::SolidPattern);
+
+    // Appliquer la brosse modifiée à la palette du dialogue
+    //CurrentDialogPalette.setBrush(QPalette::Window, CurrentDialogbrush);
+    //Dialog->setPalette(CurrentDialogPalette);
+    //Dialog->setStyleSheet("QPushButton { background-color: Green }");
+    Dialog->setStyleSheet("color: #264d00;"
+                            "background-color: #f6f6ee;"
+                            "selection-color: #264d00;"
+                            "selection-background-color: #9fdf9f;");
+    //
     int rc = Dialog->exec();
+    setWindowTitle("TGU-R");
+    Dialog->update();
     Dialog->deleteLater();
+    QIcon icon("D:\\Projetstage\\VehicleStateManager\\media\\info.png"); // Use a valid path or resource URL
+    // Set the window icon
+    setWindowIcon(icon);
+
 
     return rc;
 }
@@ -85,7 +113,7 @@ MainWindow::MainWindow(QWidget *parent)
         IP = "192.168.2.1";
         socket->connectToHost(IP,port);
         connect(socket,&QTcpSocket::connected ,this,&MainWindow::TCPConnected); // signal émis lors de la connexion au serveur
-        connect(socket,&QTcpSocket::readyRead , this,&MainWindow::TCPMsg);
+        //connect(socket,&QTcpSocket::readyRead , this,&MainWindow::TCPMsg);
         break;
     default:
         break; // wont work..
@@ -135,8 +163,10 @@ void MainWindow::OnItemSelected(QModelIndex index)
 void MainWindow::OnClientConnected()
 {
     //QMessageBox::information(nullptr,"Vehicle State Manager","client connected!");
+    qDebug()<< "m_client state : " <<m_Client->state();
     QMqttSubscription* Subscription = m_Client->subscribe(m_Configuration.Topic,m_Configuration.QOS);
     if (Subscription){
+        qDebug()<< "m_client state : " <<m_Client->state();
         connect(Subscription,&QMqttSubscription::messageReceived,this,&MainWindow::onMessageReceived);
         qDebug() << "Client subscribed";
 
@@ -149,7 +179,7 @@ void MainWindow::OnClientConnected()
 void MainWindow::OnClientDisconnected()
 {
     QMessageBox::information(nullptr,"Vehicle State Manager","client disconnected!");
-    m_Client->state();
+    qDebug()<< "m_client state : " <<m_Client->state();
 }
 
 void MainWindow::ERREUR(QJsonParseError Error)
@@ -277,9 +307,7 @@ void MainWindow::onMessageReceived(QMqttMessage msg)
     qDebug() << "Invalid message, not updating model.";
     }
 
-
     }
-
 
 void MainWindow::UpdateModel(TGURMsg Msg){
 
@@ -355,7 +383,18 @@ void MainWindow::on_Refreshbutton_clicked()
 void MainWindow::TCPConnected () {
    qDebug() << "connexion established with TCP";
    QString ser = "515543377";
-
+   switch (socket->ConnectedState)
+   {
+   case (0) :
+      QMessageBox::information(nullptr,"INFO","connected State");
+        break;
+   case(1):
+        QMessageBox::information(nullptr,"ERROR"," Different SN  ");
+        break;
+   case(5):
+        QMessageBox::information(nullptr,"ERROR","Diag in progress");
+        break;
+   }
    QJsonObject jsonMessage;
    ser.remove(QRegExp("\\s+"));
    jsonMessage["SerialNumber"] =ser;
@@ -369,17 +408,16 @@ void MainWindow::TCPConnected () {
    jsonMessage["CertPath"] ="/";
    QJsonDocument jsonDoc(jsonMessage);
    //QString Jsonstring =jsonDoc.toJson(QJsonDocument::Indented);
-
    //QString Msg= "{ \"SerialNumber\":"+ ser+",\"BrokerURI\":"+m_Configuration.Host+",\"Login\":"+m_Configuration.Username+",\"Password\":"+m_Configuration.Password+",\"QOS\":"+QString::number(m_Configuration.QOS)+",\"SecurityLvl\":"+QString::number(m_Configuration.SecurityLevel)+",""\"CertPath\": \"/\" }";
    socket->write(jsonDoc.toJson());
    socket->close();
 }
-void MainWindow::TCPMsg() {
+/*void MainWindow::TCPMsg() {
    QString MsgTCP;
    while ( socket->canReadLine() )
    {
         MsgTCP = socket->readLine();
 
    }
-}
+}*/
 
